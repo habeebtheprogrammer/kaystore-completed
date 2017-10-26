@@ -1,0 +1,3 @@
+{
+    "dbURL": "mongo ds037215.mlab.com:37215/kaystore -u <dbuser> -p <dbpassword>"
+}
