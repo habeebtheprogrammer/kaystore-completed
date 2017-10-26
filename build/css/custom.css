@@ -94,7 +94,7 @@ a{
 .navbar-brand {
   text-transform: capitalize;
   color: #000;
- padding: 8px 10px ;
+ padding: 9px 10px 2px;
 height: inherit;
 }
 nav .navbar-toggle {
@@ -625,7 +625,7 @@ nav .middle-grid{
 }
 
 button.navbar-toggle{
-  padding: 4px 10px ;
+  padding: 1px 10px ;
 }.navbar{
   min-height: 0px;
 }
@@ -666,6 +666,9 @@ footer .news-letter{
 
 .policy.container{
   padding: 0px
+}
+.navbar-brand {
+ padding: 5px 10px 2px;
 }
 .home-policy i{
   color: rgb(252, 151, 33)

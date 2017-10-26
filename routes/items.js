@@ -27,7 +27,7 @@ Router.get("/:id",function(req,res,next){
             fields = fields;
             tmpdir = files.image.path
             fileName = files.image.name;
-            newdir = path.join( process.cwd(), "public/images/"+files.image.name);
+            newdir = path.join( process.cwd(), "build/images/"+files.image.name);
             fields.image = fileName;
             newItem = new item(fields);
           });

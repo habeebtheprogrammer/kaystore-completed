@@ -35,7 +35,7 @@ router.get('/', function (req, res, next) {
             fields = fields;
             tmpdir = files.banner.path
             fileName = files.banner.name;
-            newdir = path.join(process.cwd(), "public/images/" + files.banner.name);
+            newdir = path.join(process.cwd(), "build/images/" + files.banner.name);
             fields.image = fileName;
             var newCat = new categories({
                 title: fields.title,
