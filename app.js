@@ -36,4 +36,6 @@ app.use('/api/newsletter', newsletter)
 app.use('/api/seller', seller)
 app.use('/admin', admin)
 app.use("*",index)  
-module.exports = app;
+var port = process.env.NODE_ENV || '3001'
+app.listen(port)
+// module.exports = app;
