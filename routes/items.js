@@ -37,10 +37,7 @@ Router.get("/:id",function(req,res,next){
               newItem.save().then(function (doc) {
                     res.send(doc)
                 }).catch(function (err) { 
-                    
-                    res.send(req.body) })
-
-           
+                    res.sendStatus(404) })
            })
       
         // var newItem = new item(

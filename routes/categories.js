@@ -8,8 +8,8 @@ var path = require('path')
 var fs = require("fs");
 //send all categories to the request
 router.get('/', function (req, res, next) {
-    categories.find().then(function (doc) { res.json(doc) }).catch(function (erro) { res.send(404)})
-    // item.remove({ title: "google wristwatch with alarm" }).then(function (doc) {
+    categories.find().then(function (doc) { res.json(doc) }).catch(function (erro) { res.sendStatus(404)})
+    // item.remove({ title: "google handbag" }).then(function (doc) {
     //     console.log(doc)
     // })
 })
@@ -20,8 +20,8 @@ router.get('/', function (req, res, next) {
         item.find({
             category: title.toLowerCase()
         }).then(function (doc) { 
-            if(doc.length) res.json(doc); else {res.status(404);res.send(404)}
-        }).catch(function (erro) {console.log(erro);res.send(404) })
+            if(doc.length) res.json(doc); else {res.sendStatus(404)}
+        }).catch(function (erro) {console.log(erro);res.sendStatus(404) })
 })
 
 //post new category

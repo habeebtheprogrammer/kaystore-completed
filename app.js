@@ -9,6 +9,7 @@ var categories = require('./routes/categories')
 var newsletter = require('./routes/newsletter')
 var seller = require('./routes/seller')
 var admin = require('./routes/admin')
+var index = require('./routes/index')
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'build'));
@@ -34,7 +35,5 @@ app.use('/api/categories', categories)
 app.use('/api/newsletter', newsletter)
 app.use('/api/seller', seller)
 app.use('/admin', admin)
-app.get("*",function(req,res){
-  res.sendFile(path.join(__dirname,"build/index.html"))
-})  
+app.use("*",index)  
 module.exports = app;
