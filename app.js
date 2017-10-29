@@ -29,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'build')));
 //   next();
 // });
 
-
 app.use('/api/items', product)
 app.use('/api/categories', categories)
 app.use('/api/newsletter', newsletter)
