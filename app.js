@@ -8,6 +8,7 @@ var product = require('./routes/items')
 var categories = require('./routes/categories')
 var newsletter = require('./routes/newsletter')
 var seller = require('./routes/seller')
+var search = require('./routes/search')
 var admin = require('./routes/admin')
 var index = require('./routes/index')
 var app = express();
@@ -23,13 +24,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'build')));
-// app.use(function (req, res, next) {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//   next();
-// });
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.use('/api/items', product)
+app.use('/api/search', search)
 app.use('/api/categories', categories)
 app.use('/api/newsletter', newsletter)
 app.use('/api/seller', seller)
