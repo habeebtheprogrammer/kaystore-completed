@@ -12,6 +12,7 @@ var search = require('./routes/search')
 var admin = require('./routes/admin')
 var index = require('./routes/index')
 var app = express();
+require("babel-register")
 // view engine setup
 app.set('views', path.join(__dirname, 'build'));
 app.engine("html",require('hbs').__express);
