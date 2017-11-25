@@ -8,7 +8,7 @@ var path = require('path')
 var fs = require("fs");
 //send all categories to the request
 router.get('/', function (req, res, next) {
-    categories.find().then(function (doc) { res.json(doc) }).catch(function (erro) { res.sendStatus(404)})
+    categories.find().then(function (doc) { res.json(doc) }, (error)=>res.sendStatus(500)).catch(function (error) { console.log(error); res.sendStatus(501)})
     // item.remove({ title: "google handbag" }).then(function (doc) {
     //     console.log(doc)
     // })

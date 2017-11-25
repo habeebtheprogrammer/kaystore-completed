@@ -233,6 +233,13 @@ color:#fff;border-radius:20px}
 /* .news-letter .form-group{
   width: 50%
 } */
+.faq-list a{
+  display: block;
+  font-weight: 500;
+  padding: 13px;
+  border-bottom: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+}
 .news-letter form button, .btn-custom{
   border-radius: 20px;
   padding: 6px 10px;
