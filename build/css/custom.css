@@ -255,9 +255,8 @@ color:#fff;border-radius:20px}
   width: 100%; 
 }
 .show-title{
-  opacity: 0;
   opacity: 1;
-  padding: 30% 40%;
+  padding: 23% 40%;
   font-size: 1.1em;
 }
 .bg-lg{
@@ -268,9 +267,9 @@ color:#fff;border-radius:20px}
   overflow: hidden;
   height: 150px
 }
+
 .preview-fixed{
    padding: 1.4%;width:20%;position:fixed;z-index:1024; top:10%;
-
 }
 .preview-unfixed{
  padding: 7%; 
@@ -502,7 +501,7 @@ footer .grid3 button{
   }
   .show-title{
   opacity: 0;
-  padding: 30% 40%;
+  padding: 23% 40%;
   font-size: 1.5em;
 }
   .locationbar .pad,.locationbar .pad a{
@@ -602,7 +601,7 @@ nav .middle-grid{
 @media (max-width: 649px) {
 
  .bg-lg{
-   height: 230px;
+   height: 250px;
     }
   .category-group .col-xs-6{
     width: 100%;
@@ -694,5 +693,8 @@ footer .news-letter{
 }
 .home-policy i{
   /* color: rgb(252, 151, 33) */
+}
+.show-title{
+  padding: 37% 40%
 }
 }

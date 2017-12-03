@@ -14,7 +14,7 @@ var index = require('./routes/index')
 var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'build'));
-app.engine("html",require('hbs').__express);
+app.engine("html", require('hbs').__express);
 app.set('view engine', 'html');
 
 // uncomment after placing your favicon in /public
@@ -36,9 +36,9 @@ app.use('/api/categories', categories)
 app.use('/api/newsletter', newsletter)
 app.use('/api/seller', seller)
 app.use('/admin', admin)
-app.use("*",index)  
+app.use("*", index)
 var port = process.env.PORT || '3001'
-app.listen(port,function(req,res){
-    console.log("app running on port "+port);
+app.listen(port, function (req, res) {
+  console.log("app running on port " + port);
 })
 // module.exports = app;

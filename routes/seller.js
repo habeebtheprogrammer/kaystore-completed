@@ -3,7 +3,7 @@ var Router = express.Router();
 var seller = require('../model/seller');
 var validator = require('validator');
 
-function validation (input) {
+function validation(input) {
     var valid = {}
     if (validator.isEmpty(input.firstname)) {
         valid.firstname = "Firstname is required"
@@ -24,9 +24,9 @@ function validation (input) {
         valid.address = "Address is required"
     }
     return valid
-  }
+}
 Router.post("/", function (req, res, next) {
-    var customValidator  = validation(req.body);
+    var customValidator = validation(req.body);
     console.log(customValidator)
     res.json(customValidator)
     // var user = new seller(req.body);
