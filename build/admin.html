@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body >
+
+<div class="row" style="margin:0%">
+    <div class=" col-sm-8  col-sm-offset-2" style="padding:5%">
+    <form action="api/categories"  method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <center><h3>Upload Category</h3></center>
+            <label>file :</label><input type="file" name="banner">
+        </div>
+        <div class="form-group">
+            <label>title :</label><input class="form-control" type="text" name="title">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+
+
+    <form action="api/items" method="post" enctype="multipart/form-data">
+            <center><h3>Upload Items</h3></center>
+        
+        <div class="form-group">
+            <label>image :</label>
+            <input type="file" name="image">
+        </div>
+        <div class="form-group">
+            <label>title :</label> <input class="form-control" type="text" name="title">
+        </div>
+        <div class="form-group">
+            <label>category :</label> <input class="form-control" type="text" name="category">
+        </div>
+        <div class="form-group">
+            <label>price :</label><input class="form-control" type="number" name="price">
+        </div>
+        <div class="form-group">
+            <label>discount :</label><input class="form-control" type="number" name="discount">
+        </div>
+        <div class="form-group">
+            <label>slash :</label><input class="form-control" type="number" name="slash">
+        </div>
+        <div class="form-group">
+            <label>num in stock :</label><input class="form-control" type="number" name="stock">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+        </div>
+</div>
+
+
+ 
+    
+</body>
+</html>
