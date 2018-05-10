@@ -459,7 +459,7 @@ select.form-control{
 }
 footer .copyright{
   border-top: 1px solid #696969;
-  background:  #2c2c2c;
+  background:  #222;
   padding: 2% 0px;
 }
 .footer a{
@@ -564,7 +564,7 @@ nav .middle-grid{
   height: 175px
 }
   nav .middle-grid{
-   margin-left:12%
+   /* margin-left:12% */
 }
 .item-card{
       font-size: 1em;
@@ -582,7 +582,7 @@ nav .middle-grid{
 }
 @media (min-width: 1200px) {
  nav .middle-grid{
-   margin-left:20%
+   /* margin-left:20% */
 }
 .item-card{
       font-size: 1em;
@@ -594,7 +594,7 @@ nav .middle-grid{
   width: 87%;
 }
 nav .middle-grid{
-   margin-left:20%
+   /* margin-left:20% */
 }
 
 }

@@ -15,7 +15,7 @@ Router.get('/', function (req, res, next) {
 Router.get("/:id",function(req,res,next){
     item.findOne({
         title: req.params.id
-    }).then(function (doc) { console.log(doc); res.send(doc) }).catch(function (erro) { console.log(erro) })
+    }).then(function (doc) { console.log(doc); res.json(doc) }).catch(function (erro) { console.log(erro) })
 })
 
 //post new item
