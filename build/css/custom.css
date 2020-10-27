@@ -94,7 +94,7 @@ a{
 .navbar-brand {
   text-transform: capitalize;
   color: #000;
- padding: 14px 10px 2px;
+ padding: 9px 10px 2px;
 height: inherit;
 }
 nav .navbar-toggle {
@@ -114,24 +114,10 @@ nav .navbar-toggle {
    min-Height:90px;
    letter-spacing: 1px;
      padding:0px 0px 0px 15px;
-  font-size: 1.5em;
-    -webkit-transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-.search-btn button:hover{
-  background: inherit;
-  border-left: none;
-  color: #f17e0a;
+  font-size: 1.5em
 }
 .form-control.search-bar{
-  border-bottom: 1px solid #E9E9E9;
-}
-.form-control.search-bar:focus{
-  letter-spacing: 3px;
-  -webkit-transition: 0.3s ease-in;
-  -moz-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  border-bottom: 1px solid #E9E9E9;;
 }
 .navbar.navbar-custom{
   padding: 0px 3px;
@@ -233,13 +219,6 @@ color:#fff;border-radius:20px}
 /* .news-letter .form-group{
   width: 50%
 } */
-.faq-list a{
-  display: block;
-  font-weight: 500;
-  padding: 13px;
-  border-bottom: 1px solid #D3D3D3;
-  border-right: 1px solid #D3D3D3;
-}
 .news-letter form button, .btn-custom{
   border-radius: 20px;
   padding: 6px 10px;
@@ -255,8 +234,9 @@ color:#fff;border-radius:20px}
   width: 100%; 
 }
 .show-title{
+  opacity: 0;
   opacity: 1;
-  padding: 23% 40%;
+  padding: 30% 40%;
   font-size: 1.1em;
 }
 .bg-lg{
@@ -267,9 +247,9 @@ color:#fff;border-radius:20px}
   overflow: hidden;
   height: 150px
 }
-
 .preview-fixed{
    padding: 1.4%;width:20%;position:fixed;z-index:1024; top:10%;
+
 }
 .preview-unfixed{
  padding: 7%; 
@@ -459,7 +439,7 @@ select.form-control{
 }
 footer .copyright{
   border-top: 1px solid #696969;
-  background:  #222;
+  background:  #2c2c2c;
   padding: 2% 0px;
 }
 .footer a{
@@ -501,7 +481,7 @@ footer .grid3 button{
   }
   .show-title{
   opacity: 0;
-  padding: 23% 40%;
+  padding: 30% 40%;
   font-size: 1.5em;
 }
   .locationbar .pad,.locationbar .pad a{
@@ -564,7 +544,7 @@ nav .middle-grid{
   height: 175px
 }
   nav .middle-grid{
-   /* margin-left:12% */
+   margin-left:12%
 }
 .item-card{
       font-size: 1em;
@@ -582,7 +562,7 @@ nav .middle-grid{
 }
 @media (min-width: 1200px) {
  nav .middle-grid{
-   /* margin-left:20% */
+   margin-left:20%
 }
 .item-card{
       font-size: 1em;
@@ -594,7 +574,7 @@ nav .middle-grid{
   width: 87%;
 }
 nav .middle-grid{
-   /* margin-left:20% */
+   margin-left:20%
 }
 
 }
@@ -645,11 +625,10 @@ nav .middle-grid{
 }
 
 button.navbar-toggle{
-  margin: 5px 1px ;
-}
-/* .navbar{
+  padding: 1px 10px ;
+}.navbar{
   min-height: 0px;
-} */
+}
 .item-card img{
   width: 60%
 }
@@ -688,13 +667,10 @@ footer .news-letter{
 .policy.container{
   padding: 0px
 }
-.home-policy {
-  background: #fff
+.navbar-brand {
+ padding: 5px 10px 2px;
 }
 .home-policy i{
-  /* color: rgb(252, 151, 33) */
-}
-.show-title{
-  padding: 37% 40%
+  color: rgb(252, 151, 33)
 }
 }
