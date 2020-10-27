@@ -43,7 +43,7 @@ router.post('/register', function (req, res, next) {
     if (password === "") error.password = text
     if (error.email || error.password)
         return res.json({ error })
-        if(password === cpassword)
+        // if(password === cpassword)
     // bcrypt.hash(password, 10).then((hash) => {
     //     User.findOne({email}).then((check)=>
     // {
@@ -122,7 +122,7 @@ router.post('/register', function (req, res, next) {
     // })
       
     // })
-        else res.json({ error: { password: "Password do not match", cpassword:"Password do not match"}})
+        // else res.json({ error: { password: "Password do not match", cpassword:"Password do not match"}})
 
 })
 
