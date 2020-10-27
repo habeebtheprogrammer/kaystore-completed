@@ -14,7 +14,7 @@ var index = require('./routes/index')
 var user = require('./routes/user')
 var cors = require("cors")
 var app = express();
-// view engine setup
+// view engine setup 
 app.set('views', path.join(__dirname, 'build'));
 app.engine("html", require('hbs').__express);
 app.set('view engine', 'html');
