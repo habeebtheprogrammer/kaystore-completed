@@ -15,7 +15,7 @@
     "gm": "^1.23.0",
     "hbs": "^4.0.1",
     "jade": "~1.11.0",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^4.12.2",
     "morgan": "~1.8.1",
     "nodemailer": "^4.6.4",
